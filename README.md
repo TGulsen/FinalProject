@@ -2,7 +2,7 @@
 <div align="center"> <strong> This Project have builded in Software Developer Camp | kodlama.io by Engin Demirog :star: <strong> <br> </div> 
 
 <br /> 
-<p align="center"> <img src="https://github.com/TGulsen/MyDictionary/blob/master/online-courses-computer-programming%20(1).jpg)" width="600" height="400">   </p>
+<p align="center"> <img src="https://github.com/TGulsen/MyDictionary/blob/master/online-courses-computer-programming%20(1).jpg)">   </p>
 
 <h1 align="center"> Proje Detayları | Project Details  </h1>
 <h1 > :small_red_triangle_down: Katmanlar | Layers : <br> </h1> <br>
