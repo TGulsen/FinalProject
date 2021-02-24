@@ -15,10 +15,6 @@ namespace DataAccess.Concrete.EntityFramework
     {
 
 
-
-
-
-
         public List<ProductDetailDto> GetProductDetails()
         {
             using (NorthwindContext northwindContext=new NorthwindContext())

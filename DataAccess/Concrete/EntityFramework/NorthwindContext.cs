@@ -8,7 +8,7 @@ namespace DataAccess.Concrete.EntityFramework
 {
     // Context: DB tabloları ile proje Class'larını bağlamaya yarar.
     // EntityFramework içinde DbContext vardır.
-    class NorthwindContext:DbContext
+    public class NorthwindContext:DbContext
     {
         //kullanacağımız veri tabanına söylüyoruz.
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

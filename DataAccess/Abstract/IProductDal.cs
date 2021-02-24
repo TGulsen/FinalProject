@@ -9,7 +9,7 @@ namespace DataAccess.Abstract
 {
     public interface IProductDal:IEntityRepository<Product>
     {
-        // Product entitysine özel operasyonlar için kullanılacak.
+        // Product entitysine özel operasyonlar (joın) için kullanılacak.
 
         List<ProductDetailDto> GetProductDetails();
 
