@@ -1,9 +1,13 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -21,15 +25,22 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
+        [ValidationAspect(typeof(ProductValidator))]
          public IResult Add(Product product)
          {
-            // ekleme işlemi yapılmadan kontrol edilmesi gereken iş kodları yazılır.
+            // ekleme işlemi yapılmadan kontrol edilmesi gereken iş kodları yazılır. validation kodları bunlardan ayrıdır.
             // magic strings kullanmamak adına Messages sabit olarak kullanılır.
 
-            if (product.ProductName.Length <2 )
-            {
-                return new ErrorResult(Messages.ProductNameInvalid);
-            }
+            //VALIDATION CODES :
+            //if (product.UnitPrice < 0)
+            //{
+            //    return new ErrorResult(Messages.UnıtPriceInvalid);
+            //}
+
+            //if (product.ProductName.Length <2 )
+            //{
+            //    return new ErrorResult(Messages.ProductNameInvalid);
+            //}
 
             _productDal.Add(product);
 

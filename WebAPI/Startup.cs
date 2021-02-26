@@ -31,9 +31,12 @@ namespace WebAPI
         {
             services.AddControllers();
             //arka planda IProductService ihtiyacý olduðunda ProductManager a referans oluþturur:
-            services.AddSingleton<IProductService,ProductManager>();
+
+            //services.AddSingleton<IProductService,ProductManager>();
+            
             //arka planda IProductDal ihtiyacý olduðunda EfProductdal a referans oluþturur:
-            services.AddSingleton<IProductDal, EfProductdal>();
+            
+            //services.AddSingleton<IProductDal, EfProductdal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

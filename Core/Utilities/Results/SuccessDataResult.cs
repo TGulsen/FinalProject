@@ -11,7 +11,7 @@ namespace Core.Utilities.Results
         {
 
         } 
-        // Default olarak true olan, data döndüren const.
+        // Default olarak true olan, mesajsız sadece data döndüren const.
         public SuccessDataResult(T data):base(data,true)
         {
 
@@ -23,7 +23,7 @@ namespace Core.Utilities.Results
 
         }
 
-        // Hiçbir şey döndürmeyen const.
+        // Default olarak true olan, Hiçbir şey döndürmeyen const.
         public SuccessDataResult():base(default,true)
         {
 

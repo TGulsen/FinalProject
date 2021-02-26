@@ -23,7 +23,7 @@ namespace Core.Utilities.Results
 
         }
 
-        // Hiçbir şey döndürmeyen const.
+        // Default olarak false olan, Hiçbir şey döndürmeyen const.
         public ErrorDataResult() : base(default, false)
         {
 
